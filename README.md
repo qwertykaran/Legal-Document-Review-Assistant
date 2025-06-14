@@ -1,25 +1,62 @@
-# Legal AI
-A chatbot to help you navigate through the complicated paths of the AI regulations inside EU
+# Legal Document Review Assistant
 
-Technically it is a RAG system implementation, using:
-- LLM - ChatGPT 4.o
-- VectorDB - ChromaDB
-- Embedding functions - OpenAI
-- Agents - LangChain 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 
-It demonstrates how efficient this type of system could be for big documents as a context and how smart the LLM is on understanding legal terms.
+An AI-powered tool that automates legal document review using LLMs and vector similarity search. It helps legal professionals quickly analyze documents by providing natural language answers based on document context.
 
-For the purpose of this demo, the context is The Artificial Intelligence Act, document adopted by EU Parliament on 13 March 2024. The system could be easily extended to many other legal papers. 
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example Use Cases](#example-use-cases)
+- [Project Structure](#project-structure)
+- [Future Improvements](#future-improvements)
+- [Contributing](#contributing)
+- [License](#license)
 
-### Installing
-After cloning the repository the OpenAI key needs to be added as an environmental variable with the name OPENAI_API_KEY.
+## Features
+
+### Core Capabilities
+- **Document Processing**: Upload and parse legal documents (PDF, etc.)
+- **Semantic Search**: Generate and store text embeddings for efficient retrieval
+- **Context-Aware Answers**: Use Retrieval-Augmented Generation (RAG) to provide accurate responses
+- **Multi-LLM Support**: Compatible with OpenAI, DeepSeek, and other LLM APIs
+- **Modular Design**: Easy to extend with new document types or LLM providers
+
+### Advanced Functionality
+- FAISS-based vector similarity search
+- Chunking and embedding optimization for legal texts
+- Configurable similarity thresholds
+
+## Tech Stack
+
+- **Core Language**: Python 3.8+
+- **Vector Search**: FAISS
+- **LLM Integration**: OpenAI/DeepSeek APIs
+- **Framework**: LangChain
+- **Document Parsing**: PyPDF2, pdfminer
+- **Environment Management**: pip/conda
+
+## Installation
+
+### Prerequisites
+- Python 3.8 or later
+- API key for your preferred LLM provider
+
+### Setup
 ```bash
-export OPENAI_API_KEY=your_key_value_here
-```
-After that it should be all fine. To run it localy, in the app folder use:
-```bash
-streamlit run app.py
-```
+# Clone the repository
+git clone https://github.com/yourusername/legal-document-review-assistant.git
+cd legal-document-review-assistant
 
-### Demo
-https://huggingface.co/spaces/firica/legalai
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up your API key
+echo "OPENAI_API_KEY=your_api_key_here" > .env
