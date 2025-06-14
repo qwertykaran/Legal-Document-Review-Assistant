@@ -1,0 +1,5 @@
+Force Majeure Clause:
+
+Neither party shall be liable for any failure or delay in performance under this Agreement (other than for delay in the payment of money due and payable hereunder) to the extent such failures or delays are proximately caused by causes beyond that party’s reasonable control and occurring without its fault or negligence, including, without limitation, acts of God, acts of government, pandemic, war, terrorism, labor strikes, and power failures.
+
+Such party shall give prompt written notice of the force majeure condition to the other party and shall use reasonable efforts to avoid or remove such causes of non-performance and to resume performance hereunder as soon as possible.

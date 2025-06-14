@@ -1,0 +1,5 @@
+Clause: Confidentiality
+
+Each party agrees to keep confidential all non-public information disclosed under this Agreement. This obligation remains in effect for 2 years post-termination of this Agreement.
+
+Exceptions include information that is publicly known or legally required to be disclosed by court order.

@@ -1,0 +1,9 @@
+Clause: Indemnification
+
+Each party agrees to indemnify, defend, and hold harmless the other party, its affiliates, and their respective officers, directors, employees, and agents from and against any and all claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in connection with:
+
+(a) a breach of this Agreement;
+(b) any negligence or willful misconduct; or
+(c) violation of any applicable law or third-party rights.
+
+This indemnity obligation shall survive the termination of this Agreement.
