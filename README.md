@@ -91,4 +91,4 @@ legal-ai-assistant/
 # 📜 License
 MIT - But we'd love a shoutout if you use this in production! 🚀
 
-#Made with ❤️ and Python
+# Made with ❤️ and Python
