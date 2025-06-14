@@ -1,0 +1,94 @@
+
+
+✅ How to Run
+
+
+📁 Step 1: Navigate to Project Folder
+Open your terminal (PowerShell or CMD) and run:
+
+bash
+Copy
+Edit
+cd "C:\Users\karan\OneDrive\Desktop\legalDocsAi\legalai-main"
+🧪 Step 2: Activate Your Virtual Environment
+If you're using a venv, activate it:
+
+bash
+Copy
+Edit
+.\venv\Scripts\activate
+You should see (venv) in your terminal prompt if activated successfully.
+
+📄 Step 3: Start the Backend or Agent Script
+To start responding to user queries:
+
+bash
+Copy
+Edit
+python run_agent.py
+This script will:
+
+Load your persisted Chroma vectorstore from disk
+
+Use HuggingFace embeddings (since OpenAI API quota is exceeded)
+
+Accept and respond to queries via terminal/CLI
+
+❗ Only Run ingest_legal_docs.py Again If:
+You add, delete, or update the .txt legal clause files in the /data folder.
+
+Otherwise, don’t re-run it every time—you’ll just waste processing time.
+
+🧠 Reminder: What Makes It Work
+Your embedded legal data is persisted using Chroma DB.
+
+Your run_agent.py script retrieves this vectorstore and uses a local LLM (via Ollama) to answer questions.
+
+
+
+
+--_____________________________________QUESTIONS________________________________________--
+
+🔐 Confidentiality
+"What happens if a party breaches the confidentiality clause?"
+
+"Does the confidentiality clause survive after termination of the agreement?"
+
+⚖️ Jurisdiction & Governing Law
+"Which court will resolve disputes under this contract?"
+
+"What is the difference between jurisdiction and governing law?"
+
+"Can parties choose any jurisdiction they want?"
+
+⛔ Termination Clause
+"Under what conditions can this contract be terminated early?"
+
+"What notice period is required before terminating the contract?"
+
+💣 Force Majeure
+"What qualifies as a force majeure event?"
+
+"Does COVID-19 count as a force majeure event?"
+
+"Is economic hardship considered force majeure?"
+
+🛡 Indemnity Clause
+"Who is liable under the indemnity clause?"
+
+"Does the indemnity clause include legal fees?"
+
+💼 Non-Compete Clause
+"Can an employee work for a competitor after leaving the company?"
+
+"Is a 2-year non-compete clause enforceable in India?"
+
+💸 Limitation of Liability
+"What types of damages are excluded under the limitation of liability clause?"
+
+"Is there a cap on liability in this agreement?"
+
+🤝 Dispute Resolution
+"Does this contract require arbitration or litigation?"
+
+"Can parties skip arbitration and go directly to court?"
