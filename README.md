@@ -39,7 +39,7 @@ graph TD
 # 🚀 Launch It Like a Rocket
 ```bash
 # 1. Clone with git
-git clone https://github.com/yourusername/LegalDocGenie.git && cd LegalDocGenie
+git clone https://github.com/qwertykaran/Legal-Document-Review-Assistant.git
 
 # 2. Install magic spells
 pip install -r requirements.txt
