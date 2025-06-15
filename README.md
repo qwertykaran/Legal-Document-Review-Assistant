@@ -1,94 +1,84 @@
-# 🧑⚖️ Legal Document Review Assistant  
-*AI-Powered Contract Analysis at Lightning Speed* ⚡  
+# ⚖️✨ Legal Document Analyzer 
+*Your AI-Powered Legal Document Companion*  
+*"Because no one should bill hours for reading boilerplate"*  
 
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)  
-[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)](https://www.python.org/)  
-![RAG](https://img.shields.io/badge/Architecture-RAG-ff69b4?style=for-the-badge)  
+<div align="center">
+  
+[![License](https://img.shields.io/badge/%F0%9F%93%83_License-MIT-green)](LICENSE)
+[![Python](https://img.shields.io/badge/%F0%9F%90%8D_Python-3.10%2B-blue)](https://python.org)
+[![RAG](https://img.shields.io/badge/%F0%9F%94%8D_Retrieval-RAG-ff69b4)](https://arxiv.org/abs/2005.11401)
 
-```
-+ Turns legal docs into searchable knowledge bases  
-! Supports OpenAI, DeepSeek, and local LLMs  
-- No more manual clause hunting!
+</div>
+
+# 🎨 Visual Feature Map
+```mermaid
+graph TD
+    A[📥 Document Ingestion] --> B[✂️ Chunking Engine]
+    B --> C[🧠 Embedding Generator]
+    C --> D[🏛️ FAISS Vector Store]
+    D --> E[💬 LLM Response Synthesizer]
 ```
 # 🛠️ Tech Stack
 
-### 🤖 AI/ML Core
-| Component       | Technology                          |
-|-----------------|-------------------------------------|
-| LLM Framework   | LangChain • LlamaIndex              |
-| Embeddings      | OpenAI/text-embedding-3-small       |
-| Vector Store    | FAISS (local) • Pinecone (cloud)    |
+### Core Components
+- **Language**: Python 3.10+
+- **LLM Framework**: LangChain
+- **Vector Database**: FAISS (local) / Pinecone (cloud)
+- **Embeddings**: OpenAI `text-embedding-3-small`
 
-### 📄 Document Processing
-| Function        | Libraries                           |
-|-----------------|-------------------------------------|
-| PDF Parsing     | PyPDF2 • pdfminer.six              |
-| Office Docs     | Unstructured.io • python-docx       |
-| Text Cleaning   | BeautifulSoup • regex               |
+### Document Processing
+- **PDF**: PyPDF2
+- **Office Docs**: python-docx
+- **Text Extraction**: Unstructured.io
 
-### ⚙️ Infrastructure
-| Layer           | Tools                               |
-|-----------------|-------------------------------------|
-| Environment     | Poetry • pip • virtualenv           |
-| API             | FastAPI (future)                    |
-| Deployment      | Docker (planned)                    |
+### Infrastructure
+- **Package Management**: Poetry
+- **Environment**: virtualenv
+- **API**: FastAPI (optional)
 
-### 🔍 Search & Retrieval
-| Technology      | Use Case                            |
-|-----------------|-------------------------------------|
-| FAISS           | Local similarity search             |
-| SentenceBERT    | Cross-encoder re-ranking            |
-| BM25            | Sparse retrieval (future)           |
+# 🚀 Launch It Like a Rocket
+```bash
+# 1. Clone with git
+git clone https://github.com/yourusername/LegalDocGenie.git && cd LegalDocGenie
 
-# 🌟 Features Preview
-┌──────────────────────┬──────────────────────┬──────────────────────┐  
-│   📄 Doc Processing  │   🔍 Semantic Search │   💬 Context-Aware   │  
-│  (PDF, DOCX, etc.)   │  (FAISS/Pinecone)    │    Q&A (RAG)        │  
-└──────────┬───────────┴──────────┬───────────┴──────────┬───────────┘  
-           │                      │                      │  
-           ▼                      ▼                      ▼  
-┌──────────────────────┐┌──────────────────────┐┌──────────────────────┐  
-│  Auto-chunking with  ││  Hybrid search with  ││  Multi-LLM Support   │  
-│ legal-aware splitting││ metadata filtering   ││ (Switch models on fly)│  
-└──────────────────────┘└──────────────────────┘└──────────────────────┘  
-# 🛠️ Tech Stack Superpowers
-Area	Tech
-AI Core	LangChain • LlamaIndex
-Search	FAISS • Sentence-Transformers
-Parsing	PyPDF2 • pdfminer • Unstructured.io
-UI	Streamlit (Coming Soon)
-# 🚀 Quick Start
+# 2. Install magic spells
+pip install -r requirements.txt
+
+# 3. Configure your wand (API keys)
+echo "OPENAI_API_KEY=your_key_here" > .env && echo "Done! ✨"
 ```
-# 1. Clone with git  
-git clone https://github.com/yourusername/legal-ai-assistant.git && cd legal-ai-assistant  
-
-# 2. Setup environment (Poetry recommended!)  
-poetry install  # or pip install -r requirements.txt  
-
-# 3. Configure secrets  
-echo "OPENAI_API_KEY=sk-your-key-here" > .env  
-```
-# 🎯 Use Case Examples
-```
-1. 🔍 *"Show all termination clauses in this contract"*  
-2. 📑 *"Compare indemnification sections across these 5 agreements"*  
-3. ⚖️ *"Explain this arbitration clause in plain English"*
+# 💡 Try These Sample Queries
+```text
+1. 🔍 "Show all termination clauses in this contract"
+2. 📑 "Compare indemnification sections across these 5 agreements"
+3. ⚖️ "Explain this arbitration clause in plain English"
 ```
 # 📂 Project Anatomy
-legal-ai-assistant/  
-├── 📁 core/  
-│   ├── agent.py       # AI reasoning engine  
-│   └── retriever.py   # Hybrid search system  
-├── 📁 web/            # Future Streamlit UI  
-├── tests/             # pytest suite  
-└── models/            # Custom fine-tuned models (optional)  
-# :) What Makes Us Different?
-! Legal-Specific Optimizations:  
-+ Specialized text splitting for contracts (preserves clause boundaries)  
-+ Pre-built prompt templates for common legal queries  
-+ Redaction detection system (beta)
-  
-# 📜 License
-MIT - But we'd love a shoutout if you use this in production! 🚀
+```
+legal-ai-assistant/
+├── 📁 core/
+│   ├── agent.py       # AI reasoning engine
+│   └── retriever.py   # Hybrid search system
+├── 📁 web/            # Future Streamlit UI
+├── tests/             # pytest suite
+└── models/            # Custom fine-tuned models (optional)
+```
+# Why This Stands Out
+```diff
+! Not Just Another RAG App:
++ Legal-specific text splitting (preserves clause boundaries)
++ Pre-loaded prompt templates for 50+ common legal queries
++ Redaction detection beta
+! Built by lawyers-turned-coders
+```
+
+
+# 📜 Full Feature List
+### Document Types: PDF, DOCX, TXT (images coming soon!)
+
+### Query Types: Clause extraction, comparison, summarization
+
+### Output Formats: JSON, Markdown, Plaintext
+---
 
 # Made with ❤️ and Python
