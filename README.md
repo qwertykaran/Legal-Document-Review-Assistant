@@ -74,7 +74,7 @@ legal-ai-assistant/
 
 
 # 📜 Full Feature List
-### Document Types: PDF, DOCX, TXT (images coming soon!)
+### Document Types: PDF, DOCX, TXT (coming soon!)
 
 ### Query Types: Clause extraction, comparison, summarization
 
